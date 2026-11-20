@@ -1,0 +1,80 @@
+<!D"eOCTYPE html>
+<html lang=n">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve a Table | Code Café</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+<body>
+
+    <header>
+        <img src="images/logo.svg" alt="Code Café logo" width="180">
+        <nav>
+            <a href="index.html">Back to Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Reserve Your Table</h1>
+        <p>Fill out the form below to book your study spot.</p>
+
+        <form action="thanks.html" method="get">
+
+            <fieldset><!-- تجميع الحقول المرتبطة ببعضها.-->
+                <legend>Personal Information</legend>   <!-- عنوان مجموعة الحقل-->
+                <p>
+                    <label for="fullname">Full Name:</label>
+                    <br>
+                    <input type="text" id="fullname" name="fullname">
+                </p>
+                <p>
+                    <label for="email">Email Address:</label>
+                    <br>
+                    <input type="email" id="email" name="email">
+                </p>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Reservation Details</legend>
+                <p>
+                    <label for="date">Date:</label>
+                    <br>
+                    <input type="date" id="date" name="date">
+                </p>
+                <p>
+                    <label for="guests">Number of Guests:</label>
+                    <br>
+                    <select id="guests" name="guests">
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 or more</option>
+                    </select>
+                </p>
+                <p>Preferred Seating:</p>
+                <p>
+                    <input type="radio" id="quiet" name="seating" value="quiet">
+                    <label for="quiet">Quiet Zone</label><br>
+                    <input type="radio" id="group" name="seating" value="group">
+                    <label for="group">Group Table</label>
+                </p>
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Confirm Reservation">
+                <input type="reset" value="Clear Form">
+            </p>
+        </form>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>© 2026 Code Café. A simplified student project focusing on core HTML.</p>
+    </footer>
+
+</body>
+</html>
